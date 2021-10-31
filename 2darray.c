@@ -7,7 +7,8 @@ C program storing elements in a matrix and printing it.
 ___________________________________________________________*/
 
 
-#include <stdio.h>    
+#include <stdio.h>
+
 void main ()    
 {   /* Creating integer type 2D array */ 
     int arr[100][100],i,j,r,c; 
@@ -19,9 +20,9 @@ void main ()
        scanf("%d",&c);
 	
 	/* iteratting over rows and columns */       
-    for (i=0;i<r;i++)    
+    for (i = 0; i < r; i++)    
     {    
-        for (j=0;j<c;j++)    
+        for (j = 0; j < c; j++)    
         {    
             printf("Enter the a[%d][%d] element: ",i,j);                
             scanf("%d",&arr[i][j]);    
@@ -30,10 +31,11 @@ void main ()
 	
 	/* printing the matrix using for loop */ 
     printf("\nthe Matrix ....\n");     
-    for(i=0;i<r;i++)    
+    for(i = 0; i < r; i++)    
     {    
-        printf("\n");    
-        for (j=0;j<c;j++)    
+        printf("\n");
+   
+        for (j= 0; j < c; j++)  
         {    
             printf("%d\t",arr[i][j]);    
         }    
